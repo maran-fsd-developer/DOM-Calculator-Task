@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator Task</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/10310/10310245.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <h1 id="title">DOM Calculator</h1>
+    <p id="description" class="fw-bold">This is a simple calculator that allows you to perform basic arithmetic operations like addition, subtraction, multiplication, and division. Use the buttons below to enter numbers and operations, and press "=" to see the result.</p>
+    
+    <div class="calculator">
+      <div id="display" class="display">0</div>
+      <div class="buttons">
+        <button class="btn value" id="clear" onclick="clearDisplay()">C</button>
+        <button class="btn" onclick="deleteLast()">DEL</button>
+
+        <button class="btn keys fw-bold" id="decimal" onclick="appendCharacter('.')">.</button>
+        <button class="btn keys" id="multiply" onclick="appendCharacter('*')">x</button>
+
+        <button class="btn" id="7" onclick="appendCharacter('7')">7</button>
+        <button class="btn" id="8" onclick="appendCharacter('8')">8</button>
+        <button class="btn" id="9" onclick="appendCharacter('9')">9</button>
+        <button class="btn keys" id="divide" onclick="appendCharacter('/')">/</button>
+
+        <button class="btn" id="4" onclick="appendCharacter('4')">4</button>
+        <button class="btn" id="5" onclick="appendCharacter('5')">5</button>
+        <button class="btn" id="equal" onclick="appendCharacter('6')">6</button>
+        <button class="btn keys fw-bold" id="subtract" onclick="appendCharacter('-')">-</button>
+
+        <button class="btn" id="1" onclick="appendCharacter('1')">1</button>
+        <button class="btn" id="2" onclick="appendCharacter('2')">2</button>
+        <button class="btn" id="3" onclick="appendCharacter('3')">3</button>
+        <button class="btn keys fw-bold" id="add" onclick="appendCharacter('+')">+</button>
+
+        <button class="btn" id="0" onclick="appendCharacter('0')">0</button>
+        <button class="btn" id="double-zero" onclick="appendCharacter('00')">00</button>
+
+        <button class="btn equal-size" id="equal" onclick="calculate()">=</button>
+      </div>
+    </div>
+<script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
